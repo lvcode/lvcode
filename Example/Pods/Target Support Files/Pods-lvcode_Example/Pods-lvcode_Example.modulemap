@@ -1,0 +1,6 @@
+framework module Pods_lvcode_Example {
+  umbrella header "Pods-lvcode_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

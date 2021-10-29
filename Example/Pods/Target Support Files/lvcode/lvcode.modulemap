@@ -1,0 +1,6 @@
+framework module lvcode {
+  umbrella header "lvcode-umbrella.h"
+
+  export *
+  module * { export * }
+}

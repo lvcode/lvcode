@@ -14,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		67AA7954D435D1ED917A92BE /* Pods_lvcode_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553D7E5268AA8B040FF25C0 /* Pods_lvcode_Tests.framework */; };
+		76CFB6C6272BC8CA00806A03 /* lvcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CFB6C5272BC8CA00806A03 /* lvcode.framework */; };
+		76CFB6C7272BC8CA00806A03 /* lvcode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76CFB6C5272BC8CA00806A03 /* lvcode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		990A649D4CE00695B41B80EC /* Pods_lvcode_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAF92080AB9D5D6D376A43C /* Pods_lvcode_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +29,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		76CFB6C8272BC8CA00806A03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				76CFB6C7272BC8CA00806A03 /* lvcode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		221574EF52630C84B1E75B66 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		221574EF52630C84B1E75B66 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		224F628C0E45A92A12604405 /* Pods-lvcode_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lvcode_Tests.release.xcconfig"; path = "Target Support Files/Pods-lvcode_Tests/Pods-lvcode_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5553D7E5268AA8B040FF25C0 /* Pods_lvcode_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lvcode_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1B3D45C3AE1C3F6DF73B39 /* Pods-lvcode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lvcode_Example.release.xcconfig"; path = "Target Support Files/Pods-lvcode_Example/Pods-lvcode_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,9 +58,10 @@
 		607FACE51AFB9204008FA782 /* lvcode_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lvcode_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		76CFB6C5272BC8CA00806A03 /* lvcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = lvcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806EF374A3AA1393FBB46248 /* Pods-lvcode_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lvcode_Tests.debug.xcconfig"; path = "Target Support Files/Pods-lvcode_Tests/Pods-lvcode_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		963B3362C250525A219FCCDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A9C5CD38D48E5B9E86FF10F6 /* lvcode.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = lvcode.podspec; path = ../lvcode.podspec; sourceTree = "<group>"; };
+		963B3362C250525A219FCCDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A9C5CD38D48E5B9E86FF10F6 /* lvcode.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = lvcode.podspec; path = ../lvcode.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFAF92080AB9D5D6D376A43C /* Pods_lvcode_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lvcode_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD877011A6C20827DECF324E /* Pods-lvcode_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lvcode_Example.debug.xcconfig"; path = "Target Support Files/Pods-lvcode_Example/Pods-lvcode_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				990A649D4CE00695B41B80EC /* Pods_lvcode_Example.framework in Frameworks */,
+				76CFB6C6272BC8CA00806A03 /* lvcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,7 @@
 		17D2B88974501BA75F47D402 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76CFB6C5272BC8CA00806A03 /* lvcode.framework */,
 				AFAF92080AB9D5D6D376A43C /* Pods_lvcode_Example.framework */,
 				5553D7E5268AA8B040FF25C0 /* Pods_lvcode_Tests.framework */,
 			);
@@ -86,7 +105,6 @@
 				806EF374A3AA1393FBB46248 /* Pods-lvcode_Tests.debug.xcconfig */,
 				224F628C0E45A92A12604405 /* Pods-lvcode_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +190,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				F5EB706C0E3988E15B80AE98 /* [CP] Embed Pods Frameworks */,
+				76CFB6C8272BC8CA00806A03 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +247,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
