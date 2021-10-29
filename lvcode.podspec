@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                       base、cetegory、tools
                        DESC
-
+  s.platform     = :ios, "11.0"
   s.homepage         = 'https://github.com/lvcode/lvcode'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -36,7 +36,8 @@ Pod::Spec.new do |s|
 #    'lvcode' => ['lvcode/Assets/*.png']
 #  }
 
-   s.public_header_files = 'Pod/Classes/**/*.h'
+#   s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
+   s.swift_versions = '4.0'
 #   s.dependency 'SnapKit', '~> 5.0.0'
 end
